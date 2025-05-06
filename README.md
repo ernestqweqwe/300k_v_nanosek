@@ -4,7 +4,7 @@
 Каждый раз в колбэк должен передаваться индекс текущей итерации (начиная с 0).
 
 <details>
-<summary><strong> Разбор по шагам (кликните чтобы развернуть)</strong></summary>
+<summary><strong> Разбор</strong></summary>
  
 1.  Добавление метода в прототип Number:
     - Number.prototype.times = ... — добавляет новый метод times ко всем числовым значениям в JavaScript.
