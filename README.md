@@ -21,7 +21,7 @@
 <details>
 <summary><strong> Разбор по шагам (кликните чтобы развернуть)</strong></summary>
  
-```
+```js
 Number.prototype.times = function(callback) {
   for (let i = 0; i < this; i++) {
     callback(i);
@@ -34,7 +34,7 @@ Number.prototype.times = function(callback) {
  <details>
 <summary><strong> Решение с пояснениями</strong></summary>
 
-```
+```js
 Number.prototype.times = function(callback) {
   // Цикл for выполняется от 0 до this-1 (this — числовое значение, на котором вызван метод)
   for (let i = 0; i < this; i++) {
