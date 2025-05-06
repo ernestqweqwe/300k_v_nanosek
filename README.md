@@ -54,4 +54,5 @@ Number.prototype.times = function(callback) {
 ```
 </details>
 
+[Перейти к задаче](#Задача1)
 
