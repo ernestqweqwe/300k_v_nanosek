@@ -13,7 +13,7 @@ print("Hello, World!")
 ```
 соси
 ```
-
+<details>
 ```
 var obj = {}; // пустой объект
 var person = {
