@@ -46,4 +46,4 @@ Number.prototype.times = function(callback) {
 ```
 </details>
 
-[Перейти к установке](#задача)
+[Перейти к задаче](#задача)
