@@ -1,49 +1,46 @@
- [Способы создания объекта](#способы-создания-объекта)   
-
+## Задача:
+Реализовать метод times для числового объекта (числа). Метод должен принимать функцию-колбэк (callback) 
+и вызывать её столько раз, каково значение числа.
+Каждый раз в колбэк должен передаваться индекс текущей итерации (начиная с 0).
 
 <details>
-<summary>Текст для клика (нажмите, чтобы развернуть)</summary>
+<summary><strong> Разбор по шагам (кликните чтобы развернуть)</strong></summary>
+ 
+1.  Добавление метода в прототип Number:
+    - Number.prototype.times = ... — добавляет новый метод times ко всем числовым значениям в JavaScript.
+    - Это позволяет вызывать (3).times(...), (5).times(...) и т. д.
 
-### Заголовок внутри блока
-Текст или код внутри блока.
+2. Цикл for:
+    - for (let i = 0; i < this; i++) — цикл выполняется от 0 до this - 1 (где this — числовое значение, у которого вызван метод).
+    - Например, для (3).times(...) цикл выполнится 3 раза (i = 0, i = 1, i = 2).
+3. Вызов колбэка:
+    - callback(i) — на каждой итерации вызывается переданная функция (console.log в примере), куда передаётся текущий индекс i.
 
-```python
-print("Hello, World!")
+</details>
 
-```
-соси
-```
 <details>
+<summary><strong> Разбор по шагам (кликните чтобы развернуть)</strong></summary>
+ 
 ```
-var obj = {}; // пустой объект
-var person = {
-  name: "John",
-  age: 30,
-  location: "New York"
+Number.prototype.times = function(callback) {
+  for (let i = 0; i < this; i++) {
+    callback(i);
+  }
 };
+```
+</details>
+
+
+ <details>
+<summary><strong> Решение с пояснениями</strong></summary>
 
 ```
-var obj = {}; // пустой объект
-var person = {
-  name: "John",
-  age: 30,
-  location: "New York"
+Number.prototype.times = function(callback) {
+  // Цикл for выполняется от 0 до this-1 (this — числовое значение, на котором вызван метод)
+  for (let i = 0; i < this; i++) {
+    // Вызываем переданный callback, передавая текущий индекс i
+    callback(i);
+  }
 };
-
 ```
-var obj = {}; // пустой объект
-var person = {
-  name: "John",
-  age: 30,
-  location: "New York"
-};
-
-```
-var obj = {}; // пустой объект
-var person = {
-  name: "John",
-  age: 30,
-  location: "New York"
-};
-adasdasd
- ## Способы создания объекта
+</details>
