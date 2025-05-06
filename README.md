@@ -11,12 +11,7 @@
 print("Hello, World!")
 
 ```
-var obj = {}; // пустой объект
-var person = {
-  name: "John",
-  age: 30,
-  location: "New York"
-};
+соси
 ```
 
 ```
