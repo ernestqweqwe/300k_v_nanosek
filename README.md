@@ -16,7 +16,7 @@
 <summary><strong>Разбор(своими словами) </strong></summary>
  
 1.  Добавление метода в прототип Number:
-    - Number.prototype.times = ... — добавляет новый метод times ко всем числовым значениям в JavaScript.
+    - `Number.prototype.times = ...` — добавляет новый метод times ко всем числовым значениям в JavaScript.
     - Это позволяет вызывать (3).times(...), (5).times(...) и т. д.
 
 2. Цикл for:
